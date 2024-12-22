@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <title>space</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="space, what is space">
+    <meta name="description" content="space">
+    <meta name="author" content="keynoosh">
+    <meta charset="utf-8">
+
+    <link href="style_space.css" rel="stylesheet">
+
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="image/space1.png" class="logo">
+        <ul class="menu">
+            
+      <span onclick="Openmenu()" class="sizespan">&#xf015; Open</span>
+      <span onclick="Openmenu()" class="mobilemenu">&#xf015;</span>
+  
+        </ul>
+        <h1>space is great</h1>
+
+        <!-- Buttons for toggling dark mode -->
+        <button onclick="toggleDarkMode()">Enable Dark Mode</button>
+        <button onclick="toggleLightMode()">Enable Light Mode</button>
+    </header>
+
+    <section class="tasvir1"></section>
+
+    <section class="matn" id="1">
+        <h2>space : solar system</h2>
+        <p>The solar system is a vast and dynamic collection of celestial bodies, including the Sun, eight planets, their moons, dwarf planets, asteroids, and comets.<br>
+            At its center lies the Sun, a massive star that provides the necessary heat and light for life on Earth.<br>
+            The planets, such as Earth, Mars, and Jupiter, orbit the Sun in elliptical paths, each with unique characteristics and atmospheres. Beyond the planets, the Kuiper Belt and Oort Cloud contain numerous icy bodies, contributing to our understanding of the origins and evolution of our solar system.
+        </p>
+    </section>
+
+    <section class="tasvir1"></section>
+
+    <section class="matn" id="2">
+        <h2>Solar system : Planets</h2>
+        <p>In solar system there are many planets:<br>
+            like: Mercury / Venus / Earth / Mars / Jupiter / Saturn / Uranus / Neptune<br>
+            and there are also 5 dwarf planets in our solar system:<br>
+            Pluto / Eris / Makemake / Haumea / Ceres
+        </p>
+    </section>
+
+    <section class="matn" style="margin-top: 30px;" id="3">
+        <h3>Summary:</h3>
+        <p>
+            In this article I told you about the solar system and space.<br>
+            I hope space scientists can find a new galaxy.<br>
+            When they find one, I will write it for you on this web.<br>
+            Thanks for reading this article. And I'm Arya Zolfaghari.
+        </p>
+    </section>
+
+    <section id="4">
+        <div class="cart soton">
+            <img decoding="async" src="image/nasa.png" width="100%" class="lazyload" style="height: 300px;">
+            <div class="fazayesefid">
+                <h2>Nasa</h2>
+                <p>Nasa is an Aerospace company.</p>
+            </div>
+            <button><a href="https://www.nasa.gov/">Click here</a></button>
+        </div>
+
+        <div class="cart soton">
+            <img decoding="async" src="image/BlueOrigin.jpg" width="100%" class="lazyload" style="height: 300px;">
+            <div class="fazayesefid">
+                <h2>BlueOrigin</h2>
+                <p>BlueOrigin is an Aerospace company.</p>
+            </div>
+            <button><a href="https://www.blueorigin.com/">Click here</a></button>
+        </div>
+
+        <div class="cart soton">
+            <img decoding="async" src="image/rocket lab.png" width="100%" class="lazyload" style="height: 300px;">
+            <div class="fazayesefid">
+                <h2>Rocket Lab</h2>
+                <p>Rocket Lab is an Aerospace company.</p>
+            </div>
+            <button><a href="https://www.rocketlabusa.com/">Click here</a></button>
+        </div>
+    </section>
+
+    <!-- JavaScript for toggling dark/light mode -->
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.add('dark-mode');
+        }
+
+        function toggleLightMode() {
+            document.body.classList.remove('dark-mode');
+        }
+    </script>
+
+
+
+<div class="parde" id="menu">
+          <a href="javascript:void(0)" onclick="Closemenu()" class="closebtn">&times;</a>
+          <div class="parde-content">
+              <a href="#1">home</a>
+              <a href="#2">contact</a>
+              <a href="#4">services</a>
+              <a href="#3">about</a>
+          </div>
+      </div>
+  
+
+      <script>
+          var width = 0;
+  
+          function Openmenu() {
+              var interval = setInterval(function() {
+                  if (width >= window.innerWidth) {
+                      clearInterval(interval);
+                  } else {
+                      width += 30; 
+                      document.getElementById('menu').style.width = width + 'px';
+                  }
+              }, 20); 
+          }
+  
+          function Closemenu() {
+              var interval = setInterval(function() {
+                  if (width <= 0) {
+                      clearInterval(interval); 
+                  } else {
+                      width -= 30; 
+                      document.getElementById('menu').style.width = width + 'px';
+                  }
+              }, 20); 
+          }
+      </script>
+
+</body>
+</html>
